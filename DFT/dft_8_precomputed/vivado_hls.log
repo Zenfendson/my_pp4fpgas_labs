@@ -1,0 +1,80 @@
+INFO: [HLS 200-10] Running 'D:/xilinx/Vivado/2020.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'znxnt' on host 'desktop-bmh7mvv' (Windows NT_amd64 version 6.2) on Tue Feb 02 16:36:56 +0800 2021
+INFO: [HLS 200-10] In directory 'E:/xilinx/CS239/DFT/dft_8_precomputed'
+Sourcing Tcl script 'E:/xilinx/CS239/DFT/dft_8_precomputed/hls/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project 'E:/xilinx/CS239/DFT/dft_8_precomputed/hls'.
+INFO: [HLS 200-10] Adding design file 'dft.h' to the project
+INFO: [HLS 200-10] Adding design file 'dft.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'coefficients8.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
+INFO: [HLS 200-10] Adding test bench file 'dft_test.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'E:/xilinx/CS239/DFT/dft_8_precomputed/hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'dft.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 955.105 ; gain = 862.172
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 955.105 ; gain = 862.172
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 955.105 ; gain = 862.172
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 955.105 ; gain = 862.172
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'dft_label1' (dft.cpp:21) in function 'dft' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'dft_label2' (dft.cpp:24) in function 'dft' completely with a factor of 8.
+INFO: [XFORM 203-101] Partitioning array 'temp_real' (dft.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp_imag' (dft.cpp:12) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 955.105 ; gain = 862.172
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 955.105 ; gain = 862.172
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'dft' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dft' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'dft_label0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'dft_label1'.
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 1)
+   between 'fadd' operation ('temp_imag[7]', dft.cpp:29) and 'fadd' operation ('temp_imag[7]', dft.cpp:29).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 2)
+   between 'fadd' operation ('temp_imag[7]', dft.cpp:29) and 'fadd' operation ('temp_imag[7]', dft.cpp:29).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 3)
+   between 'fadd' operation ('temp_imag[7]', dft.cpp:29) and 'fadd' operation ('temp_imag[7]', dft.cpp:29).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 4)
+   between 'fadd' operation ('temp_imag[7]', dft.cpp:29) and 'fadd' operation ('temp_imag[7]', dft.cpp:29).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 5, Depth = 21.
+INFO: [SCHED 204-61] Pipelining loop 'dft_label3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.168 seconds; current allocated memory: 106.292 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.528 seconds; current allocated memory: 108.081 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dft' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'dft/real_sample' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dft/imag_sample' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dft' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'dft_cos_coefficients_tab' to 'dft_cos_coefficiebkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dft_sin_coefficients_tab' to 'dft_sin_coefficiecud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dft_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'dft_faddfsub_32nsdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dft_fadd_32ns_32ns_32_5_full_dsp_1' to 'dft_fadd_32ns_32neOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dft_fmul_32ns_32ns_32_4_max_dsp_1' to 'dft_fmul_32ns_32nfYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'dft_fadd_32ns_32neOg': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dft_faddfsub_32nsdEe': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dft_fmul_32ns_32nfYi': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dft_mux_83_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dft'.
+INFO: [HLS 200-111]  Elapsed time: 0.718 seconds; current allocated memory: 110.446 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 109.08 MHz
+INFO: [RTMG 210-279] Implementing memory 'dft_cos_coefficiebkb_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'dft_sin_coefficiecud_rom' using distributed ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 955.105 ; gain = 862.172
+INFO: [VHDL 208-304] Generating VHDL RTL for dft.
+INFO: [VLOG 209-307] Generating Verilog RTL for dft.
+INFO: [HLS 200-112] Total elapsed time: 15.253 seconds; peak allocated memory: 110.446 MB.

@@ -1,0 +1,24 @@
+INFO: [HLS 200-10] Running 'D:/xilinx/Vivado/2020.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'znxnt' on host 'desktop-bmh7mvv' (Windows NT_amd64 version 6.2) on Mon Jan 18 14:38:40 +0800 2021
+INFO: [HLS 200-10] In directory 'E:/xilinx/CS239/cordic/cordic/HLS/cordic'
+Sourcing Tcl script 'E:/xilinx/CS239/cordic/cordic/HLS/cordic/cordiccar2pol/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project 'E:/xilinx/CS239/cordic/cordic/HLS/cordic/cordiccar2pol'.
+INFO: [HLS 200-10] Opening solution 'E:/xilinx/CS239/cordic/cordic/HLS/cordic/cordiccar2pol/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../cordiccart2pol.cpp in debug mode
+   Generating csim.exe
+---Testing results----------------------------------
+Test: x=0.8147, y=0.1269, golden theta=0.1545, golden r=0.8245, your theta=0.1545, your r=0.8245
+Test: x=0.6323, y=-0.2785, golden theta=-0.4149, golden r=0.6909, your theta=-0.4149, your r=0.6909
+Test: x=-0.5469, y=-0.9575, golden theta=-2.0898, golden r=1.1027, your theta=-2.0898, your r=1.1027
+Test: x=-0.4854, y=0.7003, golden theta=2.1769, golden r=0.8521, your theta=2.1769, your r=0.8521
+---RMS error----------------------------------
+----------------------------------------------
+   RMSE(R)           RMSE(Theta)
+0.000000108794012 0.000016664818759
+----------------------------------------------
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

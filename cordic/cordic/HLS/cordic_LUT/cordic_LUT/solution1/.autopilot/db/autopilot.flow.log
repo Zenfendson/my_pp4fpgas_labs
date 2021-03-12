@@ -1,0 +1,313 @@
+INFO-FLOW: Workspace E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordic_LUT/solution1 opened at Mon Jan 25 16:12:10 +0800 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.139 sec.
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.192 sec.
+Command     ap_source done; 0.193 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.944 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.124 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.219 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.556 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol_test.cpp 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol_test.cpp 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.cpp 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.cpp 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.h 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 0.232 sec.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 6.333 sec.
+Command ap_source done; error code: 1; 7.897 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordic_LUT/solution1 opened at Mon Jan 25 16:23:59 +0800 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.105 sec.
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.158 sec.
+Command     ap_source done; 0.159 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 1.016 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.17 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.35 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.654 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol_test.cpp 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol_test.cpp 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.cpp 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.cpp 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.h 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 6.496 sec.
+Command ap_source done; error code: 1; 8.159 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordic_LUT/solution1 opened at Mon Jan 25 16:24:55 +0800 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.163 sec.
+Command     ap_source done; 0.163 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.953 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.112 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.213 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.547 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol_test.cpp 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol_test.cpp 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.cpp 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.cpp 
+Execute     is_encrypted E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.h 
+Execute     is_xip E:/xilinx/CS239/cordic/cordic/HLS/cordic_LUT/cordiccart2pol.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 0.155 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 6.551 sec.
+Command ap_source done; error code: 1; 8.107 sec.
+Execute cleanup_all 
