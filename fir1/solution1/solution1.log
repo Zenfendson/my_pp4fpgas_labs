@@ -1,0 +1,329 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 955.180 ; gain = 861.707
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 955.180 ; gain = 861.707
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 955.180 ; gain = 861.707
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 955.180 ; gain = 861.707
+INFO: [HLS 200-489] Unrolling loop 'TDL' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:30) in function 'fir' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'MAC' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:39) in function 'fir' completely with a factor of 11.
+INFO: [XFORM 203-102] Partitioning array 'shift_reg' automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'fir' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:16)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 955.180 ; gain = 861.707
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 955.180 ; gain = 861.707
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.179 seconds; current allocated memory: 102.116 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.281 seconds; current allocated memory: 102.283 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/y' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'shift_reg_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_0' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'y' and 'x' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.398 seconds; current allocated memory: 102.630 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.51 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:32 . Memory (MB): peak = 955.180 ; gain = 861.707
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 31.85 seconds; peak allocated memory: 102.630 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 955.023 ; gain = 861.672
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 955.023 ; gain = 861.672
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 955.023 ; gain = 861.672
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 955.023 ; gain = 861.672
+INFO: [HLS 200-489] Unrolling loop 'TDL' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:29) in function 'fir' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'MAC' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:38) in function 'fir' completely with a factor of 11.
+INFO: [XFORM 203-102] Partitioning array 'shift_reg.V' automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'fir' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:16)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 955.023 ; gain = 861.672
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:30 . Memory (MB): peak = 955.023 ; gain = 861.672
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 30.802 seconds; current allocated memory: 106.442 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.291 seconds; current allocated memory: 106.603 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/y_V' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/x_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_0' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'y_V' and 'x_V' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.407 seconds; current allocated memory: 106.969 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.51 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:33 . Memory (MB): peak = 955.023 ; gain = 861.672
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 33.331 seconds; peak allocated memory: 106.969 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 955.883 ; gain = 859.719
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 955.883 ; gain = 859.719
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 955.883 ; gain = 859.719
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 955.883 ; gain = 859.719
+INFO: [HLS 200-489] Unrolling loop 'TDL' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:30) in function 'fir' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'MAC' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:39) in function 'fir' completely with a factor of 11.
+INFO: [XFORM 203-102] Partitioning array 'shift_reg.V' automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'fir' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:16)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 955.883 ; gain = 859.719
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 955.883 ; gain = 859.719
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.442 seconds; current allocated memory: 106.520 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.107 seconds; current allocated memory: 106.671 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/y_V' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/x_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_0' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'y_V' and 'x_V' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.252 seconds; current allocated memory: 107.041 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.51 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 955.883 ; gain = 859.719
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 16.289 seconds; peak allocated memory: 107.041 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+ERROR: [COSIM 212-345] Cosim only supports the following 'ap_ctrl_none' designs: (1) combinational designs; (2) pipelined design with task inteveral of 1; (3) designs with array streaming or hls_stream or AXI4 stream ports.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 955.844 ; gain = 861.625
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 955.844 ; gain = 861.625
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 955.844 ; gain = 861.625
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 955.844 ; gain = 861.625
+INFO: [HLS 200-489] Unrolling loop 'TDL' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:30) in function 'fir' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'MAC' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:39) in function 'fir' completely with a factor of 11.
+INFO: [XFORM 203-102] Partitioning array 'shift_reg.V' automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'fir' (C:/Users/znxnt/Desktop/fir_1/fir11/fir.cpp:16)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 955.844 ; gain = 861.625
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 955.844 ; gain = 861.625
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.857 seconds; current allocated memory: 106.475 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.327 seconds; current allocated memory: 106.626 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/y_V' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/x_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_reg_V_0' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'x_V' to AXI-Lite port ap_start.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111]  Elapsed time: 0.452 seconds; current allocated memory: 107.025 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.51 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 955.844 ; gain = 861.625
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-112] Total elapsed time: 31.348 seconds; peak allocated memory: 107.025 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
