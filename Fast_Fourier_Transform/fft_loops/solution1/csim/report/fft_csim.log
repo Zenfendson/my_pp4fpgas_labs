@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../fft_stages_loop_top.cpp in debug mode
+   Compiling ../../../../fft_stages_loop.cpp in debug mode
+   Generating csim.exe
+GENERATING INPUTS
+GENERATING 1024 TWIDDLE FACTORS
+Printing FFT Output
+Comparing against output data 
+Max Error@1: 0.005707
+Max Error@2: 0.010651
+Average Error: 0.000315
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+ERR: [SIM 100] CSim failed with errors.
+INFO: [SIM 3] *************** CSIM finish ***************

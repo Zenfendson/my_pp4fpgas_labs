@@ -1,0 +1,47 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Administrator' on host 'bf-202004201106' (Windows NT_amd64 version 6.2) on Wed Mar 31 11:16:56 +0800 2021
+INFO: [HLS 200-10] In directory 'E:/pp4fpgas/my_pp4fpgas_labs/Fast_Fourier_Transform'
+Sourcing Tcl script 'script.tcl'
+INFO: [HLS 200-10] Opening project 'E:/pp4fpgas/my_pp4fpgas_labs/Fast_Fourier_Transform/fft_loops'.
+INFO: [HLS 200-10] Adding design file 'fft_stages_loop.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'fft_stages_loop_top.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'fft_streaming.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'out.fft.gold.dat' to the project
+INFO: [HLS 200-10] Adding test bench file 'tw_i.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'tw_r.h' to the project
+INFO: [HLS 200-10] Opening solution 'E:/pp4fpgas/my_pp4fpgas_labs/Fast_Fourier_Transform/fft_loops/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../fft_stages_loop_top.cpp in debug mode
+   Compiling ../../../../fft_stages_loop.cpp in debug mode
+   Generating csim.exe
+GENERATING INPUTS
+GENERATING 1024 TWIDDLE FACTORS
+Printing FFT Output
+Comparing against output data 
+Max Error@1: 0.005707
+Max Error@2: 0.010651
+Average Error: 0.000315
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+@E Simulation failed.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+4
+    while executing
+"source script.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [Common 17-206] Exiting vivado_hls at Wed Mar 31 11:16:59 2021...
